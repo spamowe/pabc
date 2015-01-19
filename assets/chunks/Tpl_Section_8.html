@@ -1,0 +1,33 @@
+		<div class="row titlesy">
+        	<div class="col-sm-6 text-center"><h1><img src="assets/img/icons_board.png"  />Board of Directors and Officers</h1></div>
+        	<div class="col-sm-6 text-center"><h1><img src="assets/img/icons_coucil.png" />Council of Founders </h1></div>                    
+        </div>
+		<div class="row lduzie">
+        	<div class="col-sm-6">
+				[[!PeopleGroup? 
+					&usergroup=`Directors Members` 
+					&toPlaceholder=`Directors` 
+				    &userTpl=`Peoples.Directors` 
+				    &getProfile=`1` 
+				    &getExtended=`1` 
+				    &sortBy=`username` 
+				    &limit=`20`  
+				    &start=`0`
+				]]
+				<ul class="doubleli">[[+Directors]]</ul>	
+            </div>
+        	<div class="col-sm-6 text-right">
+				[[!PeopleGroup? 
+					&usergroup=`Founder Members` 
+					&toPlaceholder=`Founderboard` 
+				    &userTpl=`Peoples.Founder` 
+				    &getProfile=`1` 
+				    &getExtended=`1` 
+				    &sortBy=`username` 
+				    &limit=`20`  
+				    &start=`0`
+					&active=`1`
+				]]
+				<ul class="doubleli">[[+Founderboard]]</ul>	
+            </div>
+        </div>
